@@ -96,5 +96,9 @@ a:hover {
 }
 
 h2.foot {
-  padding-top: 35px;
+  padding-top: 20px;
+}
+.logopng{
+  width: 70px;
+  margin-top: -10px;
 }
