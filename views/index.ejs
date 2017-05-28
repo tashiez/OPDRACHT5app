@@ -1,0 +1,25 @@
+<% include header %>
+
+
+  <% var teller = 1; %>
+  <% nieuws.forEach(function(item){ %>
+    <section>
+
+      <img src="/img/<%- item.afbeeldings %>" alt="<%- item.titel %>">
+
+        <h2>
+          <a href=/items/<%- item.id %>><%- item.titel %></a>
+        </h2>
+        <h3>
+          <a href=/items/<%- item.id %>>- <%- item.categorieen %> -</a>
+        </h3>
+
+        <p>
+          <%- item.samenvatting %>
+        </p>
+    </section>
+    <hr> 
+    <% teller++;}); %>
+
+
+<% include footer %>
